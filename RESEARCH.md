@@ -281,4 +281,4 @@ python3 scripts/check-translationese.py <AI 语料目录...>
 
 ---
 
-**English** [RESEARCH.en.md](./RESEARCH.en.md) · **规则集** [SKILL.md](./SKILL.md) · **概览** [README.md](./README.md)
+**English** [RESEARCH.en.md](./RESEARCH.en.md) · **规则集** [SKILL.md](./skills/lieflat-less-ai-tone/SKILL.md) · **概览** [README.md](./README.md)

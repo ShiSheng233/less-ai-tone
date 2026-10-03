@@ -200,7 +200,7 @@ Statistical significance does not imply executability. Transcribing the eleven s
 
 **Exclusion of semantic judgment.** Whether a metaphor is apt, whether a question addresses a real gap in the reader's understanding, whether parallel cases constitute padding — all three depend on semantic understanding and cannot be transcribed into executable operators. Writing them into rules would only license rewriting by subjective feel, so all are excluded.
 
-Full rule set in [SKILL.md](./SKILL.md).
+Full rule set in [SKILL.md](./skills/lieflat-less-ai-tone/SKILL.md).
 
 ### 4.1 Application
 
@@ -212,7 +212,14 @@ It can also be installed locally:
 npx skills add larashero3-dotcom/lieflat-less-ai-tone
 ```
 
-Once installed, submitting text applies the rule set. `SKILL.md` also works directly as a system prompt in any tool accepting custom instructions.
+In Claude Code, install it through the plugin marketplace:
+
+```bash
+/plugin marketplace add ShiSheng233/less-ai-tone
+/plugin install lieflat-less-ai-tone@less-ai-tone
+```
+
+Once installed, submitting text applies the rule set. `skills/lieflat-less-ai-tone/SKILL.md` also works directly as a system prompt in any tool accepting custom instructions.
 
 When used alongside writing-style distillation there is no need to install this rule set separately; [writing-dna-skill](https://github.com/larashero3-dotcom/writing-dna-skill) bundles a copy, so installing that repository brings it along. The two form successive stages: the former approximates a target style, this rule set removes generation artifacts. Where distilled artifacts are present in the same directory, read `language-dna.md` first; where the two conflict, the artifacts take precedence, since they record how the target author actually writes and are not generation artifacts.
 
@@ -277,4 +284,4 @@ This skill depends on rereading long documents and rewriting them sentence by se
 
 ---
 
-**Data and code** [scripts/](./scripts/) · **Full result tables** [RESEARCH.md](./RESEARCH.md) · **Rule set** [SKILL.md](./SKILL.md) · **MoxtHub** [less-ai-tone.skill](https://moxt.ai/hub?type=skill&id=lieflat-less-ai-tone) · **中文** [README.md](./README.md)
+**Data and code** [scripts/](./scripts/) · **Full result tables** [RESEARCH.md](./RESEARCH.md) · **Rule set** [SKILL.md](./skills/lieflat-less-ai-tone/SKILL.md) · **MoxtHub** [less-ai-tone.skill](https://moxt.ai/hub?type=skill&id=lieflat-less-ai-tone) · **中文** [README.md](./README.md)

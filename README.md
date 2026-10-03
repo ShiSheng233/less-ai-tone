@@ -200,7 +200,7 @@ GPT 破折号频率之低，曾被用于论证该特征已失效。但 Claude �
 
 **语义判断的排除。** 比喻是否贴切、设问是否解决了读者的真实疑问、并列案例是否属堆砌，此三类判断依赖语义理解，无法转写为可执行算子。将其写入规则只会诱导执行者依主观语感改写，故一律排除。
 
-规则全文见 [SKILL.md](./SKILL.md)。
+规则全文见 [SKILL.md](./skills/lieflat-less-ai-tone/SKILL.md)。
 
 ### 4.1 应用
 
@@ -212,7 +212,14 @@ GPT 破折号频率之低，曾被用于论证该特征已失效。但 Claude �
 npx skills add larashero3-dotcom/lieflat-less-ai-tone
 ```
 
-安装后提交文本即按规则集处理。亦可直接将 `SKILL.md` 作为 system prompt 使用，适配任何支持自定义指令的工具。
+在 Claude Code 中可通过插件市场安装：
+
+```bash
+/plugin marketplace add ShiSheng233/less-ai-tone
+/plugin install lieflat-less-ai-tone@less-ai-tone
+```
+
+安装后提交文本即按规则集处理。亦可直接将 `skills/lieflat-less-ai-tone/SKILL.md` 作为 system prompt 使用，适配任何支持自定义指令的工具。
 
 与写作风格蒸馏配合使用时不必单独安装本规则集，[writing-dna-skill](https://github.com/larashero3-dotcom/writing-dna-skill) 已内置一份，装该仓库即随行。二者构成先后两道工序，前者负责风格逼近，本规则集负责清除生成痕迹。同目录存在蒸馏产物时优先读取 `语言DNA.md`；两者冲突时以蒸馏产物为准，因其记录的是目标作者的实际写法，不属生成痕迹。
 
@@ -277,6 +284,6 @@ python3 scripts/check-translationese.py <目录...>
 
 ---
 
-**数据与代码** [scripts/](./scripts/) · **完整结果表** [RESEARCH.md](./RESEARCH.md) · **规则集** [SKILL.md](./SKILL.md) · **MoxtHub** [去AI味.skill](https://moxt.ai/zh-CN/hub?type=skill&id=lieflat-less-ai-tone) · **English** [README.en.md](./README.en.md)
+**数据与代码** [scripts/](./scripts/) · **完整结果表** [RESEARCH.md](./RESEARCH.md) · **规则集** [SKILL.md](./skills/lieflat-less-ai-tone/SKILL.md) · **MoxtHub** [去AI味.skill](https://moxt.ai/zh-CN/hub?type=skill&id=lieflat-less-ai-tone) · **English** [README.en.md](./README.en.md)
 
 **许可** [MIT](./LICENSE)
