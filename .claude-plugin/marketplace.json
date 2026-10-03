@@ -1,0 +1,23 @@
+{
+  "name": "less-ai-tone",
+  "owner": {
+    "name": "shiujan"
+  },
+  "metadata": {
+    "description": "Lieflat Less AI Tone: corpus-tested rules for removing AI tone from Chinese writing."
+  },
+  "plugins": [
+    {
+      "name": "lieflat-less-ai-tone",
+      "source": "./",
+      "description": "Remove AI writing tells from Chinese text using an explicit whitelist of corpus-tested rules; leaves unmatched text untouched.",
+      "version": "1.0.0",
+      "author": {
+        "name": "shiujan"
+      },
+      "license": "MIT",
+      "keywords": ["writing", "chinese", "ai-tone", "editing", "style"],
+      "category": "productivity"
+    }
+  ]
+}

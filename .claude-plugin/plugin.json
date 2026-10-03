@@ -1,0 +1,12 @@
+{
+  "name": "lieflat-less-ai-tone",
+  "version": "1.0.0",
+  "description": "Remove AI writing tells from Chinese text using an explicit whitelist of corpus-tested rules; leaves unmatched text untouched. 按实测规则清单识别并改写中文写作中的 AI 痕迹。",
+  "author": {
+    "name": "shiujan"
+  },
+  "homepage": "https://moxt.ai/hub?type=skill&id=lieflat-less-ai-tone",
+  "repository": "https://github.com/ShiSheng233/less-ai-tone",
+  "license": "MIT",
+  "keywords": ["writing", "chinese", "ai-tone", "editing", "style"]
+}
